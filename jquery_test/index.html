@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  img { width: 150px; height: 150px; }
+  .container {width: 400px; margin: auto; background-color: red;}
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "p" ).draggable();
+    $( "img").draggable({refreshPositions: true});
+    $( "h1").draggable();
+
+
+$( "img" ).draggable( "option", "refreshPositions", true );
+  } );
+
+
+
+  </script>
+</head>
+<body>
+
+<div class="container">
+ 
+<div id="pink" class="ui-widget-content">
+  <p>Drag me around</p>
+
+  <p>Drag me around</p>
+  <p>Drag me around</p>
+</div>
+<h1>hello</h1>
+ <a href="http://remycesavanna.com"><img src="img/cc.png"></a>
+ <img src="img/cc2.png">
+
+</div>
+ 
+</body>
+</html>
